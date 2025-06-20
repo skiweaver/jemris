@@ -118,9 +118,10 @@ endif(NOT DEFINED HDF5_CXX_LIBRARIES)
 include_directories (${HDF5_INCLUDE_DIR})
 
 # ISMRMRD
-find_package(ISMRMRD REQUIRED)
-link_directories(${ISMRMRD_LIBRARY_DIRS})
-include_directories(${ISMRMRD_INCLUDE_DIRS})
+find_package( ISMRMRD REQUIRED )
+link_directories( ${ISMRMRD_LIBRARY_DIRS} )
+include_directories( ${ISMRMRD_INCLUDE_DIRS} )
+target_link_libraries( mytarget ${ISMRMRD_LIBRARIES} )
 
 # Docker image
 message( NOTICE "pulling docker image for reconstruction server...")
