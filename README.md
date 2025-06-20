@@ -51,27 +51,7 @@ Installation
 Please visit http://www.jemris.org for detailed installation instructions.
 
 
-How to report bugs
+Description of Changes
 ==================
 
-If you have identified a bug in JEMRIS you are welcome to send a detailed
-bug report to <tony.stoecker@dzne.de>. Please include`
-
-* Information about your system
-
-   - Which operating system and version (uname -a)
-   - Which C compiler and version (gcc --version)
-   
-  And anything else you think is relevant.
-
-* Information about your version of JEMRIS
-
-   - Version and release number
-   
-* How to reproduce the bug
-
-   - If it is a systematical bug in JEMRIS please provide the
-     sequence, the sample, the coils and the outputs from sequence or
-     simulation GUI to help us to reproduce the bug.
-
-Patches are most welcome.  If possible please provide a pull request on github.
+Creating lightweight branch for use with docker being run on a linux system. 
