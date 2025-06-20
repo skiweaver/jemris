@@ -166,25 +166,3 @@ configure_file (
   "${PROJECT_SOURCE_DIR}/src/config.h"
         @ONLY
   )
-
-
-
-add_subdirectory (src) 
-add_subdirectory (share) 
-
-# Packaging ---------------------------------------------------------------------
-
-# All
-include (InstallRequiredSystemLibraries)
-set (CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/COPYING")
-set (CPACK_GENERATOR "TBZ2")
-set (CPACK_PACKAGE_VERSION "${jemris_VERSION_MAJOR}.${jemris_VERSION_MINOR}.${jemris_VERSION_PATCH}")
-set (CPACK_PACKAGE_NAME "jemris")
-set (CPACK_PACKAGE_CONTACT "Tony Stoecker <tony.stoecker@dzne.de>")
-set (CPACK_PACKAGE_DESCRIPTION_SUMMARY "JEMRIS is a general purpose MRI simulator. Visit http://www.jemris.org for more details.")
-
-# DEB
-set (CPACK_DEBIAN_PACKAGE_ARCHITECTURE "amd64")
-set (CPACK_DEBIAN_PACKAGE_DEPENDS "ginac-tools, openmpi-bin, libsundials-cvode4, libxerces-c3.2, libhdf5-cpp-103")
-
-include (CPack)
