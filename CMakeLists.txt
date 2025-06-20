@@ -166,3 +166,6 @@ configure_file (
   "${PROJECT_SOURCE_DIR}/src/config.h"
         @ONLY
   )
+
+add_subdirectory (src)
+add_subdirectory (share)
