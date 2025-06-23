@@ -121,7 +121,6 @@ include_directories (${HDF5_INCLUDE_DIR})
 find_package( ISMRMRD REQUIRED )
 link_directories( ${ISMRMRD_LIBRARY_DIRS} )
 include_directories( ${ISMRMRD_INCLUDE_DIRS} )
-target_link_libraries( mytarget ${ISMRMRD_LIBRARIES} )
 
 # Exclude Reconstruction
 message( NOTICE "Current build does not include reconstruction server.")
